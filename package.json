@@ -1,0 +1,16 @@
+{
+  "name": "blinkmsg",
+  "version": "1.0.0",
+  "description": "BlinkMsg messaging application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "multer": "^2.0.2",
+    "better-sqlite3": "^12.4.1"
+  }
+}

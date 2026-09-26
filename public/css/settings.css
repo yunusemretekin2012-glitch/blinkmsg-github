@@ -1,0 +1,38 @@
+.settings-page {
+    min-height: 100vh;
+}
+
+.settings-content {
+    width: min(800px, calc(100% - 30px));
+
+    margin: 30px auto;
+
+    display: grid;
+
+    gap: 20px;
+}
+
+.settings-card {
+    padding: 25px;
+}
+
+.settings-card h2 {
+    margin-top: 0;
+}
+
+.settings-card label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: var(--muted);
+}
+
+.settings-card input,
+.settings-card select {
+    margin-bottom: 15px;
+}
+
+.settings-card .primary-button {
+    margin-top: 10px;
+}

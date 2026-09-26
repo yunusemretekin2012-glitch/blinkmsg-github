@@ -1,0 +1,112 @@
+:root {
+    --background: #080b12;
+    --surface: #101522;
+    --surface-2: #171d2b;
+    --border: #272e3d;
+
+    --text: #f7f8fc;
+    --muted: #9099aa;
+
+    --primary: #6c63ff;
+    --primary-hover: #8179ff;
+
+    --danger: #ff5d70;
+    --success: #45d69a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: var(--background);
+    color: var(--text);
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+button,
+input,
+textarea,
+select {
+    outline: none;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 13px;
+    border-radius: 12px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--primary);
+}
+
+.primary-button {
+    width: 100%;
+    border: none;
+    background: var(--primary);
+    color: white;
+    padding: 14px;
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+.primary-button:hover {
+    background: var(--primary-hover);
+}
+
+.secondary-button {
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 11px 15px;
+    border-radius: 10px;
+}
+
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.error {
+    background: rgba(255, 93, 112, .12);
+    color: #ff8997;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.success {
+    background: rgba(69, 214, 154, .12);
+    color: #6de1ae;
+    padding: 12px;
+    border-radius: 10px;
+}
